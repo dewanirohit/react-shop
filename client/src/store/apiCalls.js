@@ -14,7 +14,6 @@ export const login = async (dispatch, user) => {
 
 export const register = async (userInfo) => {
 	try {
-		console.log(userInfo);
 		await publicRequest.post("/auth/register", userInfo);
 	} catch (err) {
 		console.log("oops-client");
